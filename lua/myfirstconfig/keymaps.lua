@@ -21,6 +21,7 @@ setmap("n", "<C-l>", "<C-w>l", opts)
 
 -- Explorer on the left site
 setmap("n", "<leader>e", ":Lex 30<cr>", opts)
+setmap("n", "<leader>pv", vim.cmd.Ex)
 
 -- Navigate buffer (back page / forward page in browser)
 setmap("n", "<S-l>", ":bnext<CR>", opts)
