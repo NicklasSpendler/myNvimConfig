@@ -17,10 +17,25 @@ local plugins = {
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' },
 	},
-	{ 'rose-pine/neovim', name = 'rose-pine' },
+	{ 'rose-pine/neovim', name = 'rose-pine' }, -- Color Scheme
+
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	{"nvim-treesitter/playground"},
+
 	{"tpope/vim-fugitive"},
+
+	{"mbbill/undotree"},
+
+	{'williamboman/mason.nvim'},
+	{'williamboman/mason-lspconfig.nvim'},
+
+	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+	{'neovim/nvim-lspconfig'},
+	{'hrsh7th/cmp-nvim-lsp'},
+	{'hrsh7th/nvim-cmp'},
+	{'L3MON4D3/LuaSnip'},
 }
 
+-- something for lsp-zero.nvim
 require("lazy").setup(plugins, opts)
+
