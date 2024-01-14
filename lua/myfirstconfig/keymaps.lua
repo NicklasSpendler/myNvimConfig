@@ -33,10 +33,13 @@ setmap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Visual Block --
 -- Move text up and down
-setmap("x", "J", ":move '>+1<CR>gv-gv", opts)
-setmap("x", "K", ":move '<-2<CR>gv-gv", opts)
-setmap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-setmap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+setmap("x", "J", ":move '>+1<CR>gv=gv", opts)
+setmap("x", "K", ":move '<-2<CR>gv=gv", opts)
+setmap("x", "<A-j>", ":move '>+1<CR>gv=gv", opts)
+setmap("x", "<A-k>", ":move '<-2<CR>gv=gv", opts)
 
 -- Changes p key behavior (So it does not yank the pasted text) // Woth trying on and off 
 setmap("v", "p", '"_dP', opts)
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
