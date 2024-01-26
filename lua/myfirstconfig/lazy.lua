@@ -34,7 +34,18 @@ local plugins = {
 	{'hrsh7th/cmp-nvim-lsp'},
 	{'hrsh7th/nvim-cmp'},
 	{'L3MON4D3/LuaSnip'},
+
+	-- Rust stuff
+	{'simrat39/rust-tools.nvim'},
+	{'nvim-lua/plenary.nvim'},
+
+	-- Debugging (not working yet ???)
+	{'mfussenegger/nvim-dap'},
+	{'rcarriga/nvim-dap-ui'},
+	
+	{'windwp/nvim-autopairs'}
 }
+
 
 -- something for lsp-zero.nvim
 require("lazy").setup(plugins, opts)
